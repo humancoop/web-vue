@@ -8,6 +8,7 @@ import { faFacebook, faInstagram, faTwitter, faSpotify } from '@fortawesome/free
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import Thumbor from './components/Thumbor.vue'
 import SectionTitle from './components/SectionTitle.vue'
+import SectionTitleLong from './components/SectionTitleLong.vue'
 
 library.add(faGlobeAfrica)
 library.add(faFacebook)
@@ -20,5 +21,6 @@ const app = createApp(App)
 app.use(router)
 app.component('Thumbor', Thumbor)
 app.component('SectionTitle', SectionTitle)
+app.component('SectionTitleLong', SectionTitleLong)
 app.component("fa", FontAwesomeIcon)
 app.mount('#app')

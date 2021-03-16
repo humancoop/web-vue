@@ -1,5 +1,5 @@
 <template lang="pug">
-section-title(text="Territorios liberados del Sáhara Occidental" size="4")
+section-title-long(text="Territorios liberados del Sáhara Occidental" size="4")
 video.mt-4(controls width="100%" poster="https://videos-humancoop.s3-eu-west-1.amazonaws.com/introduccion.png")
   source(src="https://videos-humancoop.s3-eu-west-1.amazonaws.com/introduccion.mp4" type="video/mp4")
   | Sorry, your browser doesn't support embedded videos.
