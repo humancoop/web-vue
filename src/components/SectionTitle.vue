@@ -15,7 +15,7 @@ export default defineComponent({
   },
   computed: {
     classes: function () {
-        return `text-center text-${this.size}xl leading-relaxed`
+        return `text-center text-6xl leading-relaxed`
     }
   }
 })
