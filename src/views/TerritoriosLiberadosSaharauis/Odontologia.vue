@@ -10,8 +10,8 @@ h2.mt-4.text-4xl Plan de escuelas de salud bucodental
 .text-justify.py-4
   | Con el Plan de Escuelas, queremos garantizar que todo el alumnado realice en la escuela:
   ul
-    li Un cepillado diario.
-    li Una aplicación de flúor (la temporalidad del flúor depende del tipo aplicado).
+    li - Un cepillado diario.
+    li - Una aplicación de flúor (la temporalidad del flúor depende del tipo aplicado).
 .text-justify.py-4
   | Queremos ayudar a crear generaciones de niños y niñas saharauis con hábitos
   | saludables en materia de higiene bucodental y nutrición, que contribuyan a mejorar
@@ -38,15 +38,15 @@ h2.text-4xl Plan de prótesis dental
 .text-justify.py-4
   | Actividades:
   ul 
-    li Re-instalación y mantenimiento del laboratorio de Rabouni en los Campamentos de Refugiados de Tindouf.
-    li Instalación de laboratorio de prótesis en el Hospital de Tifariti (T. Liberados).
-    li Comisiones periódicas.
-    li Formación de profesionales locales para su empoderamiento.
+    li - Re-instalación y mantenimiento del laboratorio de Rabouni en los Campamentos de Refugiados de Tindouf.
+    li - Instalación de laboratorio de prótesis en el Hospital de Tifariti (T. Liberados).
+    li - Comisiones periódicas.
+    li - Formación de profesionales locales para su empoderamiento.
 .text-justify.py-4
   ul 
-    li Te gusta la cooperación internacional? ¡Hazte voluntario, te necesitamos!
-    li ¿Te sumas a cambiar el Mundo?
-    li ¿Eres Protésico?
+    li - Te gusta la cooperación internacional? ¡Hazte voluntario, te necesitamos!
+    li - ¿Te sumas a cambiar el Mundo?
+    li - ¿Eres Protésico?
 squares
 </template>
 <script lang="ts">

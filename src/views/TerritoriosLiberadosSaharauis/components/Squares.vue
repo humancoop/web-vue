@@ -2,7 +2,7 @@
 .my-6.text-center
     square(
         title="Pediatría"
-        src="https://videos-humancoop.s3-eu-west-1.amazonaws.com/pediatria.jpg"
+        src="https://videos-humancoop.s3-eu-west-1.amazonaws.com/pediatria2.png"
         href="pediatria"
     )
     square(
