@@ -6,20 +6,20 @@ thumbor.object-cover.w-full(
   width="896"
   height=""
 )
-.flex.my-4
-  a.mx-4(href="https://videos-humancoop.s3-eu-west-1.amazonaws.com/memoriaActividades2019.pdf")
+.flex.mt-8
+  a.mx-auto(href="https://videos-humancoop.s3-eu-west-1.amazonaws.com/memoriaActividades2019.pdf")
     thumbor(
-      src="https://videos-humancoop.s3-eu-west-1.amazonaws.com/preview_memoria_2019.png"
+      src="https://videos-humancoop.s3-eu-west-1.amazonaws.com/preview_memoria_2019_2.png"
       width="200"
       height=""
     )
-  a.mx-4(href="https://videos-humancoop.s3-eu-west-1.amazonaws.com/memoriaActividades2018.pdf")
+  a.mx-auto(href="https://videos-humancoop.s3-eu-west-1.amazonaws.com/memoriaActividades2018.pdf")
     thumbor(
       src="https://videos-humancoop.s3-eu-west-1.amazonaws.com/preview_memoria_2018.png"
       width="200"
       height=""
     )
-  a.mx-4(href="https://videos-humancoop.s3-eu-west-1.amazonaws.com/memoriaActividades2017.pdf")
+  a.mx-auto(href="https://videos-humancoop.s3-eu-west-1.amazonaws.com/memoriaActividades2017.pdf")
     thumbor(
       src="https://videos-humancoop.s3-eu-west-1.amazonaws.com/preview_memoria_2017.png"
       width="200"
