@@ -1,11 +1,6 @@
 <template lang="pug">
 section-title(text="Medicina")
-.bg-gray-400
-  thumbor.object-cover.w-full(
-    src="https://videos-humancoop.s3-eu-west-1.amazonaws.com/medicina_portada.jpg"
-    width="896"
-    height=""
-  )
+cover-image(src="https://videos-humancoop.s3-eu-west-1.amazonaws.com/medicina_portada.jpg")
 .text-justify.py-4
   | El área médica de HumanCoop tiene como objetivo general contribuir a la mejora del estado de salud de aquellas poblaciones más desfavorecidas, entendiendo la salud no solo como la ausencia de enfermedad, sino como el completo bienestar físico, psíquico y social.
 .text-justify.py-4

@@ -1,11 +1,6 @@
 <template lang="pug">
 section-title(text="Pediatría")
-.bg-gray-400
-  thumbor.object-cover.w-full(
-    src="https://videos-humancoop.s3-eu-west-1.amazonaws.com/pediatria_portada2.png"
-    width="896"
-    height=""
-  )
+cover-image(src="https://videos-humancoop.s3-eu-west-1.amazonaws.com/pediatria_portada2.png")
 .text-justify.py-4
   | El objetivo de este área es reforzar la Atención Primaria a la población pediátrica de Territorios Liberados, acompañando y empoderando al personal sanitario local.  Actualmente no hay pediatras trabajando de manera estable en esta zona, y los pacientes son atendidos en la mayoría de las ocasiones por personal de enfermería, quienes deciden los tratamientos y realizan las derivaciones al hospital de Rabouni (Campamentos de Refugiados en Tinduf, Argelia). En las comisiones realizadas desde 2018 hemos contado con la presencia de pediatras o médicos/as de familia, que se ha encargado de llevar a cabo las actividades relacionadas con nuestro objetivo:
 .text-justify.py-4

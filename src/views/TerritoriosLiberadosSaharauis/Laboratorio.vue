@@ -1,11 +1,6 @@
 <template lang="pug">
 section-title(text="Laboratorio")
-.bg-gray-400
-  thumbor.object-cover.w-full(
-    src="https://videos-humancoop.s3-eu-west-1.amazonaws.com/laboratorio_portada.jpg"
-    width="896"
-    height=""
-  )
+cover-image(src="https://videos-humancoop.s3-eu-west-1.amazonaws.com/laboratorio_portada.jpg")
 .text-justify.py-4
   | Hasta el año 2018, los Territorios Liberados carecían prácticamente de pruebas de
   | análisis clínicos que ayudaran al diagnóstico, manejo y seguimiento de los pacientes

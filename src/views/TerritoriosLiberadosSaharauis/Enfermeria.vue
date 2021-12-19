@@ -1,11 +1,6 @@
 <template lang="pug">
 section-title(text="Enfermería")
-.bg-gray-400
-  thumbor.object-cover.w-full(
-    src="https://videos-humancoop.s3-eu-west-1.amazonaws.com/enfermeria_portada.jpg"
-    width="896"
-    height=""
-  )
+cover-image(src="https://videos-humancoop.s3-eu-west-1.amazonaws.com/enfermeria_portada.jpg")
 .text-justify.py-4
  | Desde el área de enfermería se puede colaborar en muchos aspectos. Gracias a la diversidad de especialidades la enfermería hace de nexo y cohesión para todas las áreas medicas realizando cribado y triaje de todos los pacientes que acuden para recibir una atención sanitaria integral. 
 .text-justify.py-4

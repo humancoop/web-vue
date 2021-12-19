@@ -1,12 +1,6 @@
 <template lang="pug">
 section-title(text="Farmacia")
-.bg-gray-400
-  thumbor.object-cover.w-full(
-    src="https://videos-humancoop.s3-eu-west-1.amazonaws.com/farmacia_portada.jpg"
-    width="896"
-    height=""
-  )
-
+cover-image(src="https://videos-humancoop.s3-eu-west-1.amazonaws.com/farmacia_portada.jpg")
 .text-justify.py-4.italic.text-lg
   | ¿Sabes por qué fracasan la mayoría de los tratamientos en los pacientes crónicos de Territorios Liberados?
 .text-justify.py-4.font-bold

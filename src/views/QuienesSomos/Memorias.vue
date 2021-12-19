@@ -1,11 +1,6 @@
 <template lang="pug">
 section-title(text="Memorias anuales")
-.bg-gray-400
-thumbor.object-cover.w-full(
-  src="https://videos-humancoop.s3-eu-west-1.amazonaws.com/portada_memorias.jpg"
-  width="896"
-  height=""
-)
+cover-image(src="https://videos-humancoop.s3-eu-west-1.amazonaws.com/portada_memorias.jpg")
 .flex.mt-8
   a.mx-auto(href="https://videos-humancoop.s3-eu-west-1.amazonaws.com/memoriaActividades2019.pdf")
     thumbor(

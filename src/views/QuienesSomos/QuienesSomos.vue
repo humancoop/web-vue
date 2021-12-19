@@ -1,7 +1,6 @@
 <template lang="pug">
 section-title(text="¿Quiénes somos?")
-.bg-gray-400
-  thumbor.object-cover.w-full(src="https://videos-humancoop.s3-eu-west-1.amazonaws.com/manos.jpg" width="896" height="")
+cover-image(src="https://videos-humancoop.s3-eu-west-1.amazonaws.com/manos.jpg")
 .flex.mb-4
   div(class="w-5/6 pr-6")
     .text-justify.py-4

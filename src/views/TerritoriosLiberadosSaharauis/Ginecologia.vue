@@ -1,11 +1,6 @@
 <template lang="pug">
 section-title(text="Ginecología y obstetricia")
-.bg-gray-400
-  thumbor.object-cover.w-full(
-    src="https://videos-humancoop.s3-eu-west-1.amazonaws.com/ginecologia_portada.jpg"
-    width="896"
-    height=""
-  )
+cover-image(src="https://videos-humancoop.s3-eu-west-1.amazonaws.com/ginecologia_portada.jpg")
 .text-justify.py-4
   | En Territorios Liberados no existe una red sanitaria que permita el control y cribado de las principales patologías ginecoobstétricas. Por ello, y colaborando conjuntamente con el personal saharaui, se está trabajando para asegurar una asistencia integral a la mujer, en especial a la mujer embarazada.
 .text-justify.py-4

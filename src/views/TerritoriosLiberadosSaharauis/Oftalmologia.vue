@@ -1,11 +1,6 @@
 <template lang="pug">
 section-title(text="Oftalmología")
-.bg-gray-400
-  thumbor.object-cover.w-full(
-    src="https://videos-humancoop.s3-eu-west-1.amazonaws.com/oftalmologia_portada.jpg"
-    width="896"
-    height=""
-  )
+cover-image(src="https://videos-humancoop.s3-eu-west-1.amazonaws.com/oftalmologia_portada.jpg")
 .text-justify.py-4
   | En Territorios Liberados Saharauis existe una elevada frecuencia de problemas oculares, fundamentalmente, debido a las condiciones medioambientales adversas, que implican una alta exposición solar y a fuertes corrientes de aire con arena del desierto. Las patologías más frecuentes entre los adultos son la catarata, el glaucoma y los problemas relacionados con la córnea. Las patologías más frecuentes en la infancia son las que afectan a la córnea, así como los defectos refractivos no corregidos. Destacar que las patologías oculares más frecuentes representan causas importantes de baja visión y ceguera a la par que son tratables y/o prevenibles.
 .text-justify.py-4
