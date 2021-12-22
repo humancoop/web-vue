@@ -5,7 +5,7 @@ input(
   class="appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-teal-500"
   :id="name"
   :name="name"
-  type="date"
+  type="email"
   :placeholder="label"
   :value="message"
   :required="required"
@@ -16,11 +16,11 @@ input(
 <script lang="ts">
 import { defineComponent } from 'vue'
 export default defineComponent({
-  name: 'DateInput',
+  name: 'EmailInput',
   props: {
     name: String,
     label: String,
-    required : Boolean,
+    required: Boolean,
     message: String
   },
   emits: ['update:message']

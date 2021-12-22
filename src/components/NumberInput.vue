@@ -1,7 +1,18 @@
 <template lang="pug">
 label(class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name")
   | {{label}}
-input(class="appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-teal-500" :id="name" :name="name" type="number" :placeholder="label")
+input(
+  class="appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-teal-500"
+  min="5"
+  step="5"
+  :id="name"
+  :name="name"
+  type="number"
+  :placeholder="label"
+  :required="required"
+  :value="value"
+  @input="$emit('update:value', $event.target.value)"
+)
 </template>
 
 <script lang="ts">
@@ -11,6 +22,9 @@ export default defineComponent({
   props: {
     name: String,
     label: String,
-  }
+    required: Boolean,
+    value: Number
+  },
+  emits: ['update:value']
 })
 </script>

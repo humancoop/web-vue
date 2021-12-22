@@ -7,7 +7,7 @@ import { defineComponent } from 'vue'
 export default defineComponent({
   name: 'SubmitButton',
   props: {
-    text: String,
+    text: String
   }
 })
 </script>

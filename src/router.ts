@@ -95,6 +95,11 @@ const router = createRouter({
           name: 'estatutos',
           component: () => import("./views/QuienesSomos/Estatutos.vue"),
       },
+      {
+          path: '/formulario-enviado',
+          name: 'formulario-enviado',
+          component: () => import("./views/FormularioEnviado.vue"),
+      },
   ],
 });
 
