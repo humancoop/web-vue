@@ -56,7 +56,7 @@ form.p-10.w-full.bg-gray-400.rounded(@submit="onSubmit")
       )
   form-row
     form-field(very-small)
-      email-input(
+      text-input(
         label="Email"
         name="email"
         v-model:message="form_data.email"
@@ -92,12 +92,14 @@ form.p-10.w-full.bg-gray-400.rounded(@submit="onSubmit")
         required
       )
   form-row
-    form-field(small)
-      number-input(
-        label="Aportación (€)"
-        name="amount"
-        v-model:value="form_data.amount"
-        required
+    form-field
+      span Aportación 30€ anuales
+  form-row
+    form-field
+      text-input(
+        label="¿Dónde nos conociste?"
+        name="where_did_you_know"
+        v-model:message="form_data.where_did_you_know"
       )
   div(class="md:flex md:items-center")
     submit-button(text="Enviar", type="submit")
@@ -106,7 +108,7 @@ form.p-10.w-full.bg-gray-400.rounded(@submit="onSubmit")
 <script lang="ts">
 import { defineComponent } from 'vue'
 export default defineComponent({
-  name: 'DonacionForm',
+  name: 'SocioForm',
   data() {
     return {
       form_data: {
@@ -122,7 +124,7 @@ export default defineComponent({
         secondary_phone_number: null,
         account_number: null,
         account_owner_name: null,
-        amount: 5
+        where_did_you_know: null,
       }
     }
   },
