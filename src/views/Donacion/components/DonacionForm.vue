@@ -97,8 +97,20 @@ form.p-10.w-full.bg-gray-400.rounded(@submit="onSubmit")
         required
       )
   form-row
+    form-field(small)
+      styled-checkbox(required)
+        span.mr-2 Acepto la
+        styled-route-link(:to="{name: 'privacidad'}") política de privacidad
+    form-field(small)
+      styled-checkbox(required)
+        span.mr-2 Acepto que
+        styled-route-link(:to="{name: 'condiciones'}") me pasen los recibos
+  form-row
     form-field
       submit-button(text="Enviar")
+  form-row
+    form-field
+      span Si prefieres colaborar con una donación puntual, este es nuestro número de cuenta:
   form-row
     form-field
       span.mr-2 ¿Tienes alguna duda?

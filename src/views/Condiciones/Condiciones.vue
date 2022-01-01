@@ -1,0 +1,5 @@
+<template lang="pug">
+section-title(text="Condiciones de apadrinamiento")
+.text-justify.py-4
+  | Estoy de acuerdo con las condiciones de esta inscripción y apadrinamiento que determinan un mínimo de permanencia de 12 meses a partir de la fecha de comienzo. Transcurridos los 12 meses la cuota será renovada automáticamente. Si transcurrido este tiempo, no deseo continuar con mi inscripción y apadrinamiento a la Asociación me comprometo a notificarlo con un mes de antelación. Mediante la firma de esta orden de domiciliación, autorizo a la Asociación a enviar instrucciones a la entidad de la cuenta de la que soy titular para efectuar los adeudos correspondientes en mi cuenta. Como parte de mis derechos, estoy legitimado al reembolso por mi entidad en los términos y condiciones del contrato suscrito con la misma. La solicitud de reembolso deberá efectuarse dentro de las ocho semanas que siguen a la fecha de adeudo en cuenta. Asimismo, recibiré por parte de la Asociación el certificado de donación necesario que me permita la desgravación fiscal correspondiente en mi declaración del IRPF.
+</template>

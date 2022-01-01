@@ -19,6 +19,8 @@ import SelectInput from './components/SelectInput.vue'
 import SubmitButton from './components/SubmitButton.vue'
 import StyledButton from './components/StyledButton.vue'
 import StyledLink from './components/StyledLink.vue'
+import StyledRouteLink from './components/StyledRouteLink.vue'
+import StyledCheckbox from './components/StyledCheckbox.vue'
 import FormRow from './components/FormRow.vue'
 import FormField from './components/FormField.vue'
 import CoverImage from './components/CoverImage.vue'
@@ -49,6 +51,8 @@ app.component('SelectInput', SelectInput)
 app.component('SubmitButton', SubmitButton)
 app.component('StyledButton', StyledButton)
 app.component('StyledLink', StyledLink)
+app.component('StyledRouteLink', StyledRouteLink)
+app.component('StyledCheckbox', StyledCheckbox)
 app.component('FormRow', FormRow)
 app.component('FormField', FormField)
 app.component('CoverImage', CoverImage)

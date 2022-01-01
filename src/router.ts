@@ -100,6 +100,16 @@ const router = createRouter({
           name: 'formulario-enviado',
           component: () => import("./views/FormularioEnviado.vue"),
       },
+      {
+          path: '/privacidad',
+          name: 'privacidad',
+          component: () => import("./views/Privacidad/Privacidad.vue"),
+      },
+      {
+          path: '/condiciones',
+          name: 'condiciones',
+          component: () => import("./views/Condiciones/Condiciones.vue"),
+      },
   ],
 });
 
