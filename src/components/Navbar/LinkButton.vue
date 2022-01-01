@@ -1,13 +1,19 @@
 <template lang="pug">
-styled-button(:text="text")
+router-link(:to="to")
+  styled-button(:text="text") 
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue'
 export default defineComponent({
-  name: 'SubmitButton',
+  name: 'LinkButton',
   props: {
-    text: String
+    text: {
+      type: String
+    },
+    to: {
+      type: String
+    }
   }
 })
 </script>

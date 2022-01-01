@@ -4,6 +4,5 @@ section-title(text="Formulario enviado!")
   | Muchas gracias! En breve nos pondremos en
   | contacto contigo.
 router-link(:to="{name:'inicio'}")
-  button(class="bg-teal-500 hover:bg-teal-700 text-white font-bold py-2 mx-2 px-4 rounded")
-    | Aceptar
+  styled-button(text="Aceptar")
 </template>

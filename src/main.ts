@@ -17,6 +17,7 @@ import TelInput from './components/TelInput.vue'
 import EmailInput from './components/EmailInput.vue'
 import SelectInput from './components/SelectInput.vue'
 import SubmitButton from './components/SubmitButton.vue'
+import StyledButton from './components/StyledButton.vue'
 import FormRow from './components/FormRow.vue'
 import FormField from './components/FormField.vue'
 import CoverImage from './components/CoverImage.vue'
@@ -45,10 +46,12 @@ app.component('TelInput', TelInput)
 app.component('EmailInput', EmailInput)
 app.component('SelectInput', SelectInput)
 app.component('SubmitButton', SubmitButton)
+app.component('StyledButton', StyledButton)
 app.component('FormRow', FormRow)
 app.component('FormField', FormField)
 app.component('CoverImage', CoverImage)
 app.component('DonacionForm', DonacionForm)
 app.component('SocioForm', SocioForm)
+app.component('StyledButton', StyledButton)
 app.component("fa", FontAwesomeIcon)
 app.mount('#app')
