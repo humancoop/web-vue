@@ -1,5 +1,5 @@
 <template lang="pug">
-section-title(text="Haz una donación")
+section-title(text="Apadrina nuestro proyecto")
 donacion-form(@send="onSend")
 </template>
 
