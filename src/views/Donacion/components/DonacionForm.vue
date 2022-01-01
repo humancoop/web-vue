@@ -55,14 +55,14 @@ form.p-10.w-full.bg-gray-400.rounded(@submit="onSubmit")
         required
       )
   form-row
-    form-field(very-small)
+    form-field(small)
       email-input(
         label="Email"
         name="email"
         v-model:message="form_data.email"
         required
       )
-    form-field(very-small)
+    form-field(small)
       tel-input(
         label="Teléfono móvil"
         name="phone_number"
