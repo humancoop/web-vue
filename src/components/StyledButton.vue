@@ -1,5 +1,5 @@
 <template lang="pug">
-button(class="bg-teal-500 hover:bg-teal-700 text-white font-bold py-2 px-4 rounded")
+button(class="bg-teal-500 hover:bg-teal-700 text-white font-bold py-2 px-4 rounded" :type="type")
   | {{text}}
 </template>
 
@@ -10,7 +10,10 @@ export default defineComponent({
   props: {
     text: {
       type: String
-    }
+    },
+    type: {
+      type: String
+    },
   }
 })
 </script>

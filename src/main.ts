@@ -18,6 +18,7 @@ import EmailInput from './components/EmailInput.vue'
 import SelectInput from './components/SelectInput.vue'
 import SubmitButton from './components/SubmitButton.vue'
 import StyledButton from './components/StyledButton.vue'
+import StyledLink from './components/StyledLink.vue'
 import FormRow from './components/FormRow.vue'
 import FormField from './components/FormField.vue'
 import CoverImage from './components/CoverImage.vue'
@@ -47,6 +48,7 @@ app.component('EmailInput', EmailInput)
 app.component('SelectInput', SelectInput)
 app.component('SubmitButton', SubmitButton)
 app.component('StyledButton', StyledButton)
+app.component('StyledLink', StyledLink)
 app.component('FormRow', FormRow)
 app.component('FormField', FormField)
 app.component('CoverImage', CoverImage)

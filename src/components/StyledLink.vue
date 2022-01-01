@@ -1,13 +1,16 @@
 <template lang="pug">
-styled-button(:text="text" type="submit")
+a(class="text-teal-200" :href="href")
+  slot
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue'
 export default defineComponent({
-  name: 'SubmitButton',
+  name: 'StyledLink',
   props: {
-    text: String
+    href: {
+      type: String
+    }
   }
 })
 </script>

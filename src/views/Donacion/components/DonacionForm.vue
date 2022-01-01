@@ -2,6 +2,9 @@
 form.p-10.w-full.bg-gray-400.rounded(@submit="onSubmit")
   form-row
     form-field
+      span Rellena este formulario y colabora con nosotros con una aportación mensual.
+  form-row
+    form-field
       text-input(
         label="Nombre y apellidos"
         name="full_name"
@@ -92,8 +95,13 @@ form.p-10.w-full.bg-gray-400.rounded(@submit="onSubmit")
         v-model:value="form_data.amount"
         required
       )
-  div(class="md:flex md:items-center")
-    submit-button(text="Enviar", type="submit")
+  form-row
+    form-field
+      submit-button(text="Enviar")
+  form-row
+    form-field
+      span.mr-2 ¿Tienes alguna duda?
+      styled-link(href="mailto:eugenia.guinea@gmail.com") Ponte en contacto con nosotros
 </template>
 
 <script lang="ts">
