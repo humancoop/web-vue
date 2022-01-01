@@ -69,13 +69,6 @@ form.p-10.w-full.bg-gray-400.rounded(@submit="onSubmit")
         v-model:message="form_data.phone_number"
         required
       )
-    form-field(very-small)
-      tel-input(
-        label="Otro número de contacto"
-        name="secondary_phone_number"
-        v-model:message="form_data.secondary_phone_number"
-        required
-      )
   form-row
     form-field(small)
       text-input(
