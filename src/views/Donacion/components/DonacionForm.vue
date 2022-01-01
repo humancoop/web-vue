@@ -11,6 +11,7 @@ form.p-10.w-full.bg-gray-400.rounded(@submit="onSubmit")
         v-model:message="form_data.full_name"
         required
       )
+  form-row
     form-field(small)
       text-input(
         label="NIF"
@@ -102,7 +103,7 @@ form.p-10.w-full.bg-gray-400.rounded(@submit="onSubmit")
       submit-button(text="Enviar")
   form-row
     form-field
-      span Si prefieres colaborar con una donación puntual, este es nuestro número de cuenta:
+      span Si prefieres colaborar con una donación puntual, este es nuestro número de cuenta: ES31 2100 0876 3002 0029 8355
   form-row
     form-field
       span.mr-2 ¿Tienes alguna duda?
