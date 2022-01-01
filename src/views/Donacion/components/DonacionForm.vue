@@ -103,7 +103,10 @@ form.p-10.w-full.bg-gray-400.rounded(@submit="onSubmit")
       submit-button(text="Enviar")
   form-row
     form-field
-      span Si prefieres colaborar con una donación puntual, este es nuestro número de cuenta: ES31 2100 0876 3002 0029 8355
+      div
+        span Si prefieres colaborar con una donación puntual, este es nuestro número de cuenta:
+        br
+        span ES31 2100 0876 3002 0029 8355
   form-row
     form-field
       span.mr-2 ¿Tienes alguna duda?
