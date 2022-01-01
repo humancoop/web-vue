@@ -7,9 +7,9 @@ label(class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
     :id="name"
     :name="name"
     :placeholder="label"
-    :value="message"
+    :value="value"
     :required="required"
-    @input="$emit('update:message', $event.target.value)"
+    @input="$emit('update:value', $event.target.value)"
   )
     option(v-for="(option, index) in options" :key="index" :value="index" :text="option")
 </template>
@@ -21,12 +21,12 @@ export default defineComponent({
   props: {
     name: String,
     label: String,
-    message: String,
+    value: String,
     required: Boolean,
     options: {
       type: Array
     }
   },
-  emits: ['update:message']
+  emits: ['update:value']
 })
 </script>

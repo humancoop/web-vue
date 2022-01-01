@@ -89,9 +89,10 @@ form.p-10.w-full.bg-gray-400.rounded(@submit="onSubmit")
       )
   form-row
     form-field(small)
-      number-input(
+      select-input(
         label="Aportación (€)"
         name="amount"
+        :options="['10', '20', '30', '50']"
         v-model:value="form_data.amount"
         required
       )
@@ -112,7 +113,6 @@ export default defineComponent({
     return {
       form_data: {
         full_name: null,
-        birthdate: null,
         nif: null,
         address: null,
         city: null,
@@ -120,7 +120,6 @@ export default defineComponent({
         postcode: null,
         email: null,
         phone_number: null,
-        secondary_phone_number: null,
         account_number: null,
         account_owner_name: null,
         amount: 5
