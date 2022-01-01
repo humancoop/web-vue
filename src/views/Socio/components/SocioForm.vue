@@ -8,14 +8,6 @@ form.p-10.w-full.bg-gray-400.rounded(@submit="onSubmit")
         v-model:message="form_data.full_name"
         required
       )
-  form-row
-    form-field(small)
-      date-input(
-        label="Fecha de nacimiento"
-        name="birthdate"
-        v-model:message="form_data.birthdate"
-        required
-      )
     form-field(small)
       text-input(
         label="NIF"
@@ -113,7 +105,6 @@ export default defineComponent({
     return {
       form_data: {
         full_name: null,
-        birthdate: null,
         nif: null,
         address: null,
         city: null,
