@@ -7,11 +7,13 @@ header
       social-links
       link-buttons
   navigation-links
+  mobile-links
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue'
 import  NavigationLinks from './NavigationLinks.vue'
+import  MobileLinks from './MobileLinks.vue'
 import  Logo from './Logo.vue'
 import  MobileMenu from './MobileMenu.vue'
 import  SocialLinks from './SocialLinks.vue'
@@ -20,6 +22,7 @@ export default defineComponent({
   name: 'NavBar',
   components: {
     NavigationLinks,
+    MobileLinks,
     Logo,
     MobileMenu,
     SocialLinks,
