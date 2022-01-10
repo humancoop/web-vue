@@ -94,6 +94,11 @@ form.p-10.w-full.bg-gray-400.rounded(@submit="onSubmit")
         name="where_did_you_know"
         v-model:message="form_data.where_did_you_know"
       )
+  form-row
+    form-field(small)
+      styled-checkbox(required)
+        span.mr-2 Acepto la
+        styled-route-link(:to="{name: 'privacidad'}") política de privacidad
   div(class="md:flex md:items-center")
     submit-button(text="Enviar", type="submit")
 </template>
