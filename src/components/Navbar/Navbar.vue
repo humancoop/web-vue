@@ -2,12 +2,12 @@
 header
   nav.flex.items-center.justify-between.flex-wrap.bg-gray-900.p-6
     logo
-    mobile-menu
+    mobile-menu(@click="onMobileMenuClick" :open="mobileMenuOpen")
     div(class="w-full hidden lg:block flex-grow lg:flex lg:items-center lg:w-auto")
       social-links
       link-buttons
   navigation-links
-  mobile-links
+  mobile-links(:open="mobileMenuOpen")
 </template>
 
 <script lang="ts">
@@ -27,6 +27,21 @@ export default defineComponent({
     MobileMenu,
     SocialLinks,
     LinkButtons,
-  }
+  },
+  data() {
+    return {
+      mobileMenuOpen: false,
+    }
+  },
+  methods: {
+    onMobileMenuClick() {
+      this.mobileMenuOpen = !this.mobileMenuOpen
+    },
+  },
+  watch:{
+    $route (to, from){
+        this.mobileMenuOpen = false
+    }
+  } 
 })
 </script>

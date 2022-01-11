@@ -1,6 +1,7 @@
 <template lang="pug">
 nav(
     class="lg:hidden bg-gray-700 py-2 px-6"
+    v-if="open"
   )
   .flex.mt-4
     router-link(:to="{name: 'quienes-somos'}" class="text-teal-200 hover:text-white") ¿Quiénes somos?
@@ -19,6 +20,12 @@ nav(
 <script lang="ts">
 import { defineComponent } from 'vue'
 export default defineComponent({
-  name: 'MobileLinks'
+  name: 'MobileLinks',
+  props: {
+    open: {
+      type: Boolean,
+      default: false
+    }
+  }
 })
 </script>

@@ -12,7 +12,15 @@ div(class="block lg:hidden")
           stroke-linecap="round"
           stroke-linejoin="round"
           stroke-width="2"
+          d="M4 6h16M4"
+          v-if="open"
+        )
+        path(
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
           d="M4 6h16M4 12h16M4 18h16"
+          v-else
         )
 
 </template>
@@ -20,6 +28,12 @@ div(class="block lg:hidden")
 <script lang="ts">
 import { defineComponent } from 'vue'
 export default defineComponent({
-  name: 'MobileMenu'
+  name: 'MobileMenu',
+  props: {
+    open: {
+      type: Boolean,
+      default: false,
+    }
+  }
 })
 </script>
