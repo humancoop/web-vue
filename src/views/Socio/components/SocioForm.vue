@@ -6,6 +6,7 @@ form.p-10.w-full.bg-gray-400.rounded(@submit="onSubmit")
         label="Nombre y apellidos"
         name="full_name"
         v-model:message="form_data.full_name"
+        :disabled="waiting"
         required
       )
   form-row
@@ -14,6 +15,7 @@ form.p-10.w-full.bg-gray-400.rounded(@submit="onSubmit")
         label="NIF"
         name="nif"
         v-model:message="form_data.nif"
+        :disabled="waiting"
         required
       )
   form-row
@@ -22,6 +24,7 @@ form.p-10.w-full.bg-gray-400.rounded(@submit="onSubmit")
         label="Dirección"
         name="address"
         v-model:message="form_data.address"
+        :disabled="waiting"
         required
       )
   form-row
@@ -30,6 +33,7 @@ form.p-10.w-full.bg-gray-400.rounded(@submit="onSubmit")
         label="Localidad"
         name="city"
         v-model:message="form_data.city"
+        :disabled="waiting"
         required
       )
     form-field(small)
@@ -37,6 +41,7 @@ form.p-10.w-full.bg-gray-400.rounded(@submit="onSubmit")
         label="Provincia"
         name="province"
         v-model:message="form_data.province"
+        :disabled="waiting"
         required
       )
   form-row
@@ -45,14 +50,16 @@ form.p-10.w-full.bg-gray-400.rounded(@submit="onSubmit")
         label="Código postal"
         name="postcode"
         v-model:message="form_data.postcode"
+        :disabled="waiting"
         required
       )
   form-row
     form-field(very-small)
-      text-input(
+      email-input(
         label="Email"
         name="email"
         v-model:message="form_data.email"
+        :disabled="waiting"
         required
       )
     form-field(very-small)
@@ -60,6 +67,7 @@ form.p-10.w-full.bg-gray-400.rounded(@submit="onSubmit")
         label="Teléfono móvil"
         name="phone_number"
         v-model:message="form_data.phone_number"
+        :disabled="waiting"
         required
       )
     form-field(very-small)
@@ -67,6 +75,7 @@ form.p-10.w-full.bg-gray-400.rounded(@submit="onSubmit")
         label="Otro número de contacto"
         name="secondary_phone_number"
         v-model:message="form_data.secondary_phone_number"
+        :disabled="waiting"
         required
       )
   form-row
@@ -75,6 +84,7 @@ form.p-10.w-full.bg-gray-400.rounded(@submit="onSubmit")
         label="Número de cuenta (IBAN)"
         name="account_number"
         v-model:message="form_data.account_number"
+        :disabled="waiting"
         required
       )
     form-field(small)
@@ -82,6 +92,7 @@ form.p-10.w-full.bg-gray-400.rounded(@submit="onSubmit")
         label="Nombre del titular"
         name="account_owner_name"
         v-model:message="form_data.account_owner_name"
+        :disabled="waiting"
         required
       )
   form-row
@@ -93,6 +104,7 @@ form.p-10.w-full.bg-gray-400.rounded(@submit="onSubmit")
         label="¿Dónde nos conociste?"
         name="where_did_you_know"
         v-model:message="form_data.where_did_you_know"
+        :disabled="waiting"
       )
   form-row
     form-field(small)
@@ -100,7 +112,7 @@ form.p-10.w-full.bg-gray-400.rounded(@submit="onSubmit")
         span.mr-2 Acepto la
         styled-route-link(:to="{name: 'privacidad'}") política de privacidad
   div(class="md:flex md:items-center")
-    submit-button(text="Enviar", type="submit")
+    submit-button(text="Enviar", type="submit" :waiting="waiting")
 </template>
 
 <script lang="ts">
@@ -123,6 +135,12 @@ export default defineComponent({
         account_owner_name: null,
         where_did_you_know: null,
       }
+    }
+  },
+  props: {
+    waiting: {
+      type: Boolean,
+      default: false
     }
   },
   methods: {

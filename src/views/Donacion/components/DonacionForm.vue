@@ -9,6 +9,7 @@ form.p-10.w-full.bg-gray-400.rounded(@submit="onSubmit")
         label="Nombre y apellidos"
         name="full_name"
         v-model:message="form_data.full_name"
+        :disabled="waiting"
         required
       )
   form-row
@@ -17,6 +18,7 @@ form.p-10.w-full.bg-gray-400.rounded(@submit="onSubmit")
         label="NIF"
         name="nif"
         v-model:message="form_data.nif"
+        :disabled="waiting"
         required
       )
   form-row
@@ -25,6 +27,7 @@ form.p-10.w-full.bg-gray-400.rounded(@submit="onSubmit")
         label="Dirección"
         name="address"
         v-model:message="form_data.address"
+        :disabled="waiting"
         required
       )
   form-row
@@ -33,6 +36,7 @@ form.p-10.w-full.bg-gray-400.rounded(@submit="onSubmit")
         label="Localidad"
         name="city"
         v-model:message="form_data.city"
+        :disabled="waiting"
         required
       )
     form-field(small)
@@ -40,6 +44,7 @@ form.p-10.w-full.bg-gray-400.rounded(@submit="onSubmit")
         label="Provincia"
         name="province"
         v-model:message="form_data.province"
+        :disabled="waiting"
         required
       )
   form-row
@@ -48,6 +53,7 @@ form.p-10.w-full.bg-gray-400.rounded(@submit="onSubmit")
         label="Código postal"
         name="postcode"
         v-model:message="form_data.postcode"
+        :disabled="waiting"
         required
       )
   form-row
@@ -56,6 +62,7 @@ form.p-10.w-full.bg-gray-400.rounded(@submit="onSubmit")
         label="Email"
         name="email"
         v-model:message="form_data.email"
+        :disabled="waiting"
         required
       )
     form-field(small)
@@ -63,6 +70,7 @@ form.p-10.w-full.bg-gray-400.rounded(@submit="onSubmit")
         label="Teléfono móvil"
         name="phone_number"
         v-model:message="form_data.phone_number"
+        :disabled="waiting"
         required
       )
   form-row
@@ -71,6 +79,7 @@ form.p-10.w-full.bg-gray-400.rounded(@submit="onSubmit")
         label="Número de cuenta (IBAN)"
         name="account_number"
         v-model:message="form_data.account_number"
+        :disabled="waiting"
         required
       )
     form-field(small)
@@ -78,6 +87,7 @@ form.p-10.w-full.bg-gray-400.rounded(@submit="onSubmit")
         label="Nombre del titular"
         name="account_owner_name"
         v-model:message="form_data.account_owner_name"
+        :disabled="waiting"
         required
       )
   form-row
@@ -85,6 +95,7 @@ form.p-10.w-full.bg-gray-400.rounded(@submit="onSubmit")
       select-input(
         label="Aportación (€)"
         name="amount"
+        :disabled="waiting"
         :options="['10', '20', '30', '50']"
         v-model:value="form_data.amount"
         required
@@ -100,7 +111,7 @@ form.p-10.w-full.bg-gray-400.rounded(@submit="onSubmit")
         styled-route-link(:to="{name: 'condiciones'}") me pasen los recibos
   form-row
     form-field
-      submit-button(text="Enviar")
+      submit-button(text="Enviar" :waiting="waiting")
   form-row
     form-field
       div
@@ -132,6 +143,12 @@ export default defineComponent({
         account_owner_name: null,
         amount: 5
       }
+    }
+  },
+  props: {
+    waiting: {
+      type: Boolean,
+      default: false
     }
   },
   methods: {

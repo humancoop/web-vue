@@ -8,6 +8,7 @@ input(
   type="email"
   :placeholder="label"
   :value="message"
+  :disabled="disabled"
   :required="required"
   @input="$emit('update:message', $event.target.value)"
 )
@@ -21,6 +22,7 @@ export default defineComponent({
     name: String,
     label: String,
     required: Boolean,
+    disabled: Boolean,
     message: String
   },
   emits: ['update:message']

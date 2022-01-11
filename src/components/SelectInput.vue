@@ -9,6 +9,7 @@ label(class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
     :placeholder="label"
     :value="value"
     :required="required"
+    :disabled="disabled"
     @input="$emit('update:value', $event.target.value)"
   )
     option(v-for="(option, index) in options" :key="index" :value="index" :text="option")
@@ -23,6 +24,7 @@ export default defineComponent({
     label: String,
     value: String,
     required: Boolean,
+    disabled: Boolean,
     options: {
       type: Array
     }

@@ -8,6 +8,7 @@ input(
   type="tel"
   :placeholder="label"
   :value="message"
+  :disabled="disabled"
   :required="required"
   @input="$emit('update:message', $event.target.value)"
 )
@@ -21,7 +22,8 @@ export default defineComponent({
     name: String,
     label: String,
     required: Boolean,
-    message: String
+    message: String,
+    disabled: Boolean,
   },
   emits: ['update:message']
 })
