@@ -6,13 +6,13 @@ label(class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
     class="appearance-none bg-white border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-teal-500"
     :id="name"
     :name="name"
-    :placeholder="label"
     :value="value"
     :required="required"
     :disabled="disabled"
     @input="$emit('update:value', $event.target.value)"
   )
-    option(v-for="(option, index) in options" :key="index" :value="index" :text="option")
+    option(disabled) {{label}}
+    option(v-for="(option, index) in options" :key="index" :value="option[1]" :text="option[0]")
 </template>
 
 <script lang="ts">

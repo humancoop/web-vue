@@ -96,7 +96,7 @@ form.p-10.w-full.bg-gray-400.rounded(@submit="onSubmit")
         label="Aportación (€)"
         name="amount"
         :disabled="waiting"
-        :options="['10', '20', '30', '50']"
+        :options="[['10', 10], ['20', 20], ['30', 30], ['50', 50]]"
         v-model:value="form_data.amount"
         required
       )
@@ -141,7 +141,7 @@ export default defineComponent({
         phone_number: null,
         account_number: null,
         account_owner_name: null,
-        amount: 5
+        amount: 10
       }
     }
   },
