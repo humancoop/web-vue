@@ -21,7 +21,7 @@ div(class="text-sm lg:flex-grow")
   )
     fa(:icon="{prefix: 'fab', iconName:'spotify'}")
   a(
-    href="email"
+    href="mailto:info@onghumancoop.org"
     class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4"
   )
     fa(icon="envelope")
