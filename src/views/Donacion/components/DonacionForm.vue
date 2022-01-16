@@ -93,7 +93,7 @@ form.p-10.w-full.bg-gray-400.rounded(@submit="onSubmit")
   form-row
     form-field(small)
       select-input(
-        label="Aportación (€)"
+        label="Aportación Mensual (€)"
         name="amount"
         :disabled="waiting"
         :options="[['10', 10], ['20', 20], ['30', 30], ['50', 50]]"

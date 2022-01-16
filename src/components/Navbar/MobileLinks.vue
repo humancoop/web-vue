@@ -11,8 +11,8 @@ nav(
     router-link(:to="{name: 'que-puedes-hacer-tu'}" class="text-teal-200 hover:text-white") ¿Qué puedes hacer tú?
   .flex.mt-4
     router-link(:to="{name: 'donacion'}" class="text-teal-200 hover:text-white") Apadrina nuestro proyecto
-  .flex.mt-4
-    router-link(:to="{name: 'socio'}" class="text-teal-200 hover:text-white") Hazte socio
+  //.flex.mt-4
+    //router-link(:to="{name: 'socio'}" class="text-teal-200 hover:text-white") Hazte socio
   .flex.mt-4.mb-4
     router-link(:to="{name: 'voluntario'}" class="text-teal-200 hover:text-white") Hazte voluntario
 </template>

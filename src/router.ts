@@ -30,11 +30,11 @@ const router = createRouter({
           name: 'quienes-somos',
           component: () => import("./views/QuienesSomos/QuienesSomos.vue"),
       },
-      {
+      /*{
           path: '/socio',
           name: 'socio',
           component: () => import("./views/Socio/Socio.vue"),
-      },
+      },*/
       {
           path: '/voluntario',
           name: 'voluntario',
