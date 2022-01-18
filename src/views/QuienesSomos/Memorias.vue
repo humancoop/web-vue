@@ -2,6 +2,12 @@
 section-title(text="Memorias anuales")
 cover-image(src="https://videos-humancoop.s3-eu-west-1.amazonaws.com/portada_memorias.jpg")
 .flex.mt-8
+  a.mx-auto(href="https://videos-humancoop.s3-eu-west-1.amazonaws.com/memoriaActividades2020.pdf")
+    thumbor(
+      src="https://videos-humancoop.s3-eu-west-1.amazonaws.com/preview_memoria_2020.png"
+      width="200"
+      height=""
+    )
   a.mx-auto(href="https://videos-humancoop.s3-eu-west-1.amazonaws.com/memoriaActividades2019.pdf")
     thumbor(
       src="https://videos-humancoop.s3-eu-west-1.amazonaws.com/preview_memoria_2019_2.png"
