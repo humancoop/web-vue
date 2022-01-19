@@ -1,5 +1,5 @@
 <template lang="pug">
-.text-white Humancoop 2019 - 2021
+.text-white Humancoop 2019 - 2022
 </template>
 
 <script lang="ts">
