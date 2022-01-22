@@ -1,5 +1,5 @@
 <template lang="pug">
-p(class="text-3xl whitespace-nowrap")
+p(class="text-3xl")
   | Te podrías desgravar&nbsp;
   span(class="text-teal-200") {{result}} €
   | &nbsp;al año
