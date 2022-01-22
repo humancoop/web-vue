@@ -91,15 +91,17 @@ form.p-10.w-full.bg-gray-400.rounded(@submit="onSubmit")
         required
       )
   form-row
-    form-field(small)
-      select-input(
-        label="Aportación Mensual (€)"
-        name="amount"
+    form-field
+      amount-input(
+        label="Aportación Mensual"
         :disabled="waiting"
-        :options="[['10', 10], ['20', 20], ['30', 30], ['50', 50]]"
+        :amounts="amounts"
         v-model:value="form_data.amount"
         required
       )
+  form-row
+    form-field
+      tax-calculator(:amount="form_data.amount")
   form-row
     form-field(small)
       styled-checkbox(required)
@@ -129,7 +131,9 @@ import { defineComponent } from 'vue'
 export default defineComponent({
   name: 'DonacionForm',
   data() {
+    const amounts = [20, 40, 60]
     return {
+      amounts: amounts,
       form_data: {
         full_name: null,
         nif: null,
@@ -141,7 +145,7 @@ export default defineComponent({
         phone_number: null,
         account_number: null,
         account_owner_name: null,
-        amount: 10
+        amount: amounts[0]
       }
     }
   },
