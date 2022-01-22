@@ -12,6 +12,9 @@ import TextInput from './components/TextInput.vue'
 import AreaInput from './components/AreaInput.vue'
 import ToggleInput from './components/ToggleInput.vue'
 import NumberInput from './components/NumberInput.vue'
+import AmountInput from './components/AmountInput.vue'
+import AmountSquare from './components/AmountSquare.vue'
+import TaxCalculator from './components/TaxCalculator.vue'
 import DateInput from './components/DateInput.vue'
 import TelInput from './components/TelInput.vue'
 import EmailInput from './components/EmailInput.vue'
@@ -43,6 +46,9 @@ app.component('SectionTitleLong', SectionTitleLong)
 app.component('TextInput', TextInput)
 app.component('AreaInput', AreaInput)
 app.component('NumberInput', NumberInput)
+app.component('AmountInput', AmountInput)
+app.component('AmountSquare', AmountSquare)
+app.component('TaxCalculator', TaxCalculator)
 app.component('DateInput', DateInput)
 app.component('ToggleInput', ToggleInput)
 app.component('TelInput', TelInput)
