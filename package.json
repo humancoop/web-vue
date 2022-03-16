@@ -18,7 +18,7 @@
     "@fortawesome/vue-fontawesome": "^3.0.0-5",
     "@vitejs/plugin-vue": "^2.2.4",
     "@vue/compiler-sfc": "^3.2.30",
-    "autoprefixer": "^10.4.2",
+    "autoprefixer": "^10.4.4",
     "axios": "^0.26.1",
     "husky": "^7.0.4",
     "lint-staged": "^12.3.6",
