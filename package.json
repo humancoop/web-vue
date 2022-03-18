@@ -21,7 +21,7 @@
     "autoprefixer": "^10.4.4",
     "axios": "^0.26.1",
     "husky": "^7.0.4",
-    "lint-staged": "^12.3.6",
+    "lint-staged": "^12.3.7",
     "postcss": "^8.4.12",
     "prettier": "^2.6.0",
     "pug": "^3.0.2",
