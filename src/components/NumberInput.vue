@@ -3,13 +3,13 @@ label(class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
   | {{label}}
 input(
   class="appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-teal-500"
-  min="5"
-  step="5"
+  min="0"
   :id="name"
   :name="name"
   type="number"
   :placeholder="label"
   :required="required"
+  :disabled="disabled"
   :value="value"
   @input="$emit('update:value', $event.target.value)"
 )
@@ -23,7 +23,8 @@ export default defineComponent({
     name: String,
     label: String,
     required: Boolean,
-    value: Number
+    value: Number,
+    disabled: Boolean,
   },
   emits: ['update:value']
 })

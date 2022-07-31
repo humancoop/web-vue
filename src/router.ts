@@ -1,5 +1,3 @@
-//Route::post('/socio', 'NewMemberController@newMemberFormPost');
-//Route::post('/voluntario', 'NewVolunteerController@newVolunteerFormPost');
 import { createRouter, createWebHistory } from 'vue-router';
 
 const router = createRouter({
@@ -30,11 +28,6 @@ const router = createRouter({
           name: 'quienes-somos',
           component: () => import("./views/QuienesSomos/QuienesSomos.vue"),
       },
-      /*{
-          path: '/socio',
-          name: 'socio',
-          component: () => import("./views/Socio/Socio.vue"),
-      },*/
       {
           path: '/voluntario',
           name: 'voluntario',

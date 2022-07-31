@@ -29,7 +29,7 @@ import FormField from './components/FormField.vue'
 import CoverImage from './components/CoverImage.vue'
 import SectionTitleLong from './components/SectionTitleLong.vue'
 import DonacionForm from './views/Donacion/components/DonacionForm.vue'
-import SocioForm from './views/Socio/components/SocioForm.vue'
+import VoluntarioForm from './views/Voluntario/components/VoluntarioForm.vue'
 
 library.add(faGlobeAfrica)
 library.add(faFacebook)
@@ -63,7 +63,7 @@ app.component('FormRow', FormRow)
 app.component('FormField', FormField)
 app.component('CoverImage', CoverImage)
 app.component('DonacionForm', DonacionForm)
-app.component('SocioForm', SocioForm)
+app.component('VoluntarioForm', VoluntarioForm)
 app.component('StyledButton', StyledButton)
 app.component("fa", FontAwesomeIcon)
 app.mount('#app')
