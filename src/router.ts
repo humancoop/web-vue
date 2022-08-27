@@ -84,6 +84,16 @@ const router = createRouter({
           component: () => import("./views/QuienesSomos/Memorias.vue"),
       },
       {
+          path: '/quienes-somos/voluntarios',
+          name: 'voluntarios',
+          component: () => import("./views/QuienesSomos/Voluntarios.vue"),
+      },
+      {
+          path: '/quienes-somos/junta',
+          name: 'junta',
+          component: () => import("./views/QuienesSomos/Junta.vue"),
+      },
+      {
           path: '/quienes-somos/estatutos',
           name: 'estatutos',
           component: () => import("./views/QuienesSomos/Estatutos.vue"),
