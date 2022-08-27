@@ -1,5 +1,5 @@
 <template lang="pug">
-section-title(text="En construcción...")
+section-title-long(text="En construcción...")
 //cover-image(src="https://videos-humancoop.s3-eu-west-1.amazonaws.com/portada_estatutos2.png")
 //.flex.mt-8
   //video.px-4(controls width="100%" poster="https://videos-humancoop.s3-eu-west-1.amazonaws.com/acupuntor.png")

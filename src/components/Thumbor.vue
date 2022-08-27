@@ -1,5 +1,5 @@
 <template lang="pug">
-img(:src="fullPath")
+img(:src="fullPath" style="object-fit:cover;")
 </template>
 
 <script lang="ts">
