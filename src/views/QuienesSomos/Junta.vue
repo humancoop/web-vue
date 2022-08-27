@@ -1,5 +1,5 @@
 <template lang="pug">
-section-title(text="Junta directiva y responsables de área")
+section-title-long(text="Junta directiva y responsables de área")
 cover-image(src="https://videos-humancoop.s3-eu-west-1.amazonaws.com/portada_estatutos2.png")
 .flex.flex-col
   member(
