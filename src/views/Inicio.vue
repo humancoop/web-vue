@@ -1,5 +1,5 @@
 <template lang="pug">
-.my-8.px-6
+.my-8
   cover-image(src="https://videos-humancoop.s3-eu-west-1.amazonaws.com/logo_grande.png")
   .text-justify.py-4
     | HumanCoop es una Asociación de Voluntarios para la Cooperación y el Desarrollo,
