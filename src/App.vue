@@ -1,6 +1,6 @@
 <template lang="pug">
 navbar
-main.mb-auto.mx-auto.text-gray-900.max-w-4xl
+main.mb-auto.mx-auto.text-gray-900.max-w-4xl.px-6
   router-view
 footer.text-center.w-full.mt-16.bg-gray-900.p-4
   footer-content

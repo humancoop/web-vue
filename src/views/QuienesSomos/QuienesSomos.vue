@@ -2,23 +2,23 @@
 section-title(text="¿Quiénes somos?")
 cover-image(src="https://videos-humancoop.s3-eu-west-1.amazonaws.com/manos.jpg")
 div(class="lg:hidden")
-  div(class="flex justify-between")
-    a(href="/quienes-somos/voluntarios")
+  div(class="flex justify-between mt-4")
+    a(href="/quienes-somos/voluntarios" class="w-1/4 mx-2 text-center")
       .max-w-sm.overflow-hidden.bg-gray-500
         .px-1.py-1
-          .font-bold.mb-2 Voluntarios
-    a(href="/quienes-somos/junta")
+          .font-bold Voluntarios
+    a(href="/quienes-somos/junta" class="w-1/4 mx-2 text-center")
       .max-w-sm.overflow-hidden.bg-gray-500
         .px-1.py-1
-          .font-bold.mb-2 Junta
-    a(href="/quienes-somos/estatutos")
+          .font-bold Junta
+    a(href="/quienes-somos/estatutos" class="w-1/4 mx-2 text-center")
       .max-w-sm.overflow-hidden.bg-gray-500
         .px-1.py-1
-          .font-bold.mb-2 Estatutos
-    router-link(:to="{'name': 'memorias'}")
+          .font-bold Estatutos
+    router-link(:to="{'name': 'memorias'}" class="w-1/4 mx-2 text-center")
       .max-w-sm.overflow-hidden.bg-gray-500
         .px-1.py-1
-          .font-bold.mb-2 Memorias
+          .font-bold Memorias
 .flex.mb-4
   div(class="lg:w-5/6 lg:pr-6")
     .text-justify.py-4
@@ -54,21 +54,21 @@ div(class="lg:hidden")
       | ¿TE SUMAS A CAMBIAR EL MUNDO?
 
   div(class="hidden lg:w-1/6 lg:block")
-    a(href="/quienes-somos/voluntarios")
+    a(href="/quienes-somos/voluntarios" class="text-center")
       .max-w-sm.overflow-hidden.bg-gray-500.my-2
         .px-6.py-4
-          .font-bold.text-xl.mb-2 Voluntarios
-    a(href="/quienes-somos/junta")
+          .font-bold.text-l Voluntarios
+    a(href="/quienes-somos/junta" class="text-center")
       .max-w-sm.overflow-hidden.bg-gray-500.my-2
         .px-6.py-4
-          .font-bold.text-xl.mb-2 Junta
-    a(href="/quienes-somos/estatutos")
+          .font-bold.text-l Junta
+    a(href="/quienes-somos/estatutos" class="text-center")
       .max-w-sm.overflow-hidden.bg-gray-500.my-2
         .px-6.py-4
-          .font-bold.text-xl.mb-2 Estatutos
-    router-link(:to="{'name': 'memorias'}")
+          .font-bold.text-l Estatutos
+    router-link(:to="{'name': 'memorias'}" class="text-center")
       .max-w-sm.overflow-hidden.bg-gray-500.my-2
         .px-6.py-4
-          .font-bold.text-xl.mb-2 Memorias
+          .font-bold.text-l Memorias
 
 </template>
