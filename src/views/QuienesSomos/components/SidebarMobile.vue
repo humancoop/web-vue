@@ -1,21 +1,17 @@
 <template lang="pug">
 div(class="lg:hidden")
-  div(class="flex flex-wrap content-between mt-4")
-    a(href="/quienes-somos/voluntarios" class="w-1/4 mx-2 my-2 text-center")
-      .max-w-sm.overflow-hidden.bg-gray-500
-        .px-1.py-1
+  div(class="flex flex-wrap mt-4")
+    div(class="w-full my-2 px-2 py-2 text-center bg-gray-500")
+      a(href="/quienes-somos/voluntarios")
           .font-bold Voluntarios
-    a(href="/quienes-somos/junta" class="w-1/4 mx-2 my-2 text-center")
-      .max-w-sm.overflow-hidden.bg-gray-500
-        .px-1.py-1
+    div(class="w-full my-2 px-2 py-2 text-center bg-gray-500")
+      a(href="/quienes-somos/junta")
           .font-bold Junta
-    a(href="/quienes-somos/estatutos" class="w-1/4 mx-2 my-2 text-center")
-      .max-w-sm.overflow-hidden.bg-gray-500
-        .px-1.py-1
+    div(class="w-full my-2 px-2 py-2 text-center bg-gray-500")
+      a(href="/quienes-somos/estatutos")
           .font-bold Estatutos
-    router-link(:to="{'name': 'memorias'}" class="w-1/4 mx-2 my-2 text-center")
-      .max-w-sm.overflow-hidden.bg-gray-500
-        .px-1.py-1
+    div(class="w-full my-2 px-2 py-2 text-center bg-gray-500")
+      router-link(:to="{'name': 'memorias'}")
           .font-bold Memorias
 </template>
 
