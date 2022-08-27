@@ -32,4 +32,13 @@ cover-image(src="https://videos-humancoop.s3-eu-west-1.amazonaws.com/portada_mem
       width="200"
       height=""
     )
+.text-2xl.text-center.mt-16 Empresas y organismos colaboradores
+.text-l.text-center.mt-4 ¡Gracias por vuestra colaboración!
+.flex.w-full.flex-wrap.mt-4.items-center.content-center
+  thumbor.mx-4(width="200" height="" src="https://videos-humancoop.s3-eu-west-1.amazonaws.com/kin.png")
+  thumbor.mx-4(width="200" height="" src="https://videos-humancoop.s3-eu-west-1.amazonaws.com/calatayud.png")
+  thumbor.mx-4(width="200" height="" src="https://videos-humancoop.s3-eu-west-1.amazonaws.com/proclinic.png")
+  thumbor.mx-4(width="200" height="" src="https://videos-humancoop.s3-eu-west-1.amazonaws.com/middle.png")
+  thumbor.mx-4(width="200" height="" src="https://videos-humancoop.s3-eu-west-1.amazonaws.com/salem.png")
+  thumbor.mx-4(width="200" height="" src="https://videos-humancoop.s3-eu-west-1.amazonaws.com/dynamic.png")
 </template>
