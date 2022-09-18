@@ -15,7 +15,7 @@ sidebar-mobile
       | de voluntarios, con experiencia acumulada en diversos países de África. Desde
       | 2014 desarrollamos un proyecto de cooperación en el Sáhara Occidental bajo la
       | cobertura de Dentalcoop (Asociación de Voluntarios para la Salud Dental), pues
-      | inicialmente el proyecto se ceñía al área odontológica. Con el paso del tiempo, se
+      | inicialmente el proyecto se ceñía al área odontológica. En 2021 comenzamos a trabajar en Mauritania. Con el paso del tiempo, se
       | ha ampliado el alcance del proyecto, contando con diferentes profesionales de la
       | salud: médicos de familia, internistas, pediatras, ginecólogos, oftalmólogos… así
       | como enfermeros, auxiliares, técnicos de laboratorio y farmacéuticos. También
