@@ -10,7 +10,7 @@ cover-image(src="https://videos-humancoop.s3-eu-west-1.amazonaws.com/portada_est
   member(
     src="https://videos-humancoop.s3.eu-west-1.amazonaws.com/eugenia.jpg"
     fullname="Eugenia Guinea"
-    title="Secrentaria y Tesorera"
+    title="Secretaria y Tesorera"
     other="Área de Ginecología"
   )
   member(
