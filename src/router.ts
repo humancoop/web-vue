@@ -34,6 +34,11 @@ const router = createRouter({
           component: () => import("./views/Voluntario/Voluntario.vue"),
       },
       {
+          path: '/mauritania',
+          name: 'mauritania',
+          component: () => import("./views/Mauritania/Mauritania.vue"),
+      },
+      {
           path: '/territorios-liberados-saharauis',
           name: 'territorios-liberados-saharauis',
           component: () => import("./views/TerritoriosLiberadosSaharauis/TerritoriosLiberadosSaharauis.vue"),
