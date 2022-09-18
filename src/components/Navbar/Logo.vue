@@ -1,8 +1,7 @@
 <template lang="pug">
 router-link.flex.items-centerflex-shrink-0.text-white.mr-6(:to="{name:'inicio'}")
-  fa.mr-1.text-3xl(icon="globe-africa")
-  span.font-semibold.text-xl.tracking-tight Human
-  span.font-semibold.text-xl.tracking-tight.text-teal-500 Coop
+  img(src="https://videos-humancoop.s3.eu-west-1.amazonaws.com/dentalcoop_logo_2.svg" alt="HumanCoop" width="150")
+
 </template>
 
 <script lang="ts">
