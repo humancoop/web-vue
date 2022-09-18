@@ -1,5 +1,5 @@
 <template lang="pug">
-.my-6.text-center
+.flex.w-full.flex-wrap.items-center.content-center.my-6
     square(
         title="Pediatría"
         src="https://videos-humancoop.s3-eu-west-1.amazonaws.com/pediatria2.png"

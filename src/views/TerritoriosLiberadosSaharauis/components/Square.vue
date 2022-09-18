@@ -1,10 +1,9 @@
 <template lang="pug">
-.my-6.text-center
+div(class="flex text-center")
   router-link(:to="destination")
-    .overflow-hidden.bg-white.shadow-lg.float-right(style="width:112px;")
-      thumbor(:src="src" width="112" height="")
-      .px-2
-          .font-bold.text-base.mb-2 {{ title }}
+    div(class="overflow-hidden bg-white shadow-lg" style="width:105px")
+      thumbor(:src="src" width="105" height="")
+      .font-bold.text-base.mb-2 {{ title }}
 </template>
 
 <script lang="ts">
