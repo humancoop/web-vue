@@ -17,7 +17,7 @@
     "@fortawesome/free-solid-svg-icons": "^6.2.0",
     "@fortawesome/vue-fontawesome": "^3.0.1",
     "@vitejs/plugin-vue": "^2.3.4",
-    "@vue/compiler-sfc": "^3.2.40",
+    "@vue/compiler-sfc": "^3.2.41",
     "autoprefixer": "^10.4.12",
     "axios": "^1.1.2",
     "husky": "^8.0.1",
