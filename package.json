@@ -8,7 +8,7 @@
     "prettier": "prettier"
   },
   "dependencies": {
-    "vue": "^3.2.41",
+    "vue": "^3.2.43",
     "vue-router": "^4.1.6"
   },
   "devDependencies": {
