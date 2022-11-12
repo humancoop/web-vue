@@ -5,13 +5,13 @@ socio-form(@send="onSend" :waiting="waiting")
 
 <script lang="ts">
 import router from '@/router'
-import { newMember } from '@/apis/apis'
+import { newSocio } from '@/apis/apis'
   export default {
     methods: {
       async onSend(data) {
         this.waiting = true
         try {
-          await newMember(data) 
+          await newSocio(data) 
           router.replace('/formulario-enviado')
         } catch (err) {
           console.log(err)
