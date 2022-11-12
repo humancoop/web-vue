@@ -7,6 +7,11 @@ section-title(text="¿Qué puedes hacer tú?")
     title="Apadrina el proyecto"
   )
   white-square(
+    href="socio/"
+    src="https://videos-humancoop.s3-eu-west-1.amazonaws.com/portada_memorias.jpg"
+    title="Hazte socio"
+  )
+  white-square(
     href="voluntario"
     src="https://videos-humancoop.s3-eu-west-1.amazonaws.com/manos.jpg"
     title="Hazte voluntario"
