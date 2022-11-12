@@ -34,6 +34,11 @@ const router = createRouter({
           component: () => import("./views/Voluntario/Voluntario.vue"),
       },
       {
+          path: '/socio',
+          name: 'socio',
+          component: () => import("./views/Socio/Socio.vue"),
+      },
+      {
           path: '/mauritania',
           name: 'mauritania',
           component: () => import("./views/Mauritania/Mauritania.vue"),
