@@ -41,4 +41,6 @@ cover-image(src="https://videos-humancoop.s3-eu-west-1.amazonaws.com/portada_mem
   thumbor.mx-4(width="200" height="" src="https://videos-humancoop.s3-eu-west-1.amazonaws.com/middle.png")
   thumbor.mx-4(width="200" height="" src="https://videos-humancoop.s3-eu-west-1.amazonaws.com/salem.png")
   thumbor.mx-4(width="200" height="" src="https://videos-humancoop.s3-eu-west-1.amazonaws.com/dynamic.png")
+  thumbor.mx-4(width="200" height="" src="https://videos-humancoop.s3-eu-west-1.amazonaws.com/aguilar.png")
+  thumbor.mx-4(width="200" height="" src="https://videos-humancoop.s3-eu-west-1.amazonaws.com/eupharma.png")
 </template>
