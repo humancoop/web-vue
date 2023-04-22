@@ -105,7 +105,7 @@ form.p-10.w-full.bg-gray-400.rounded(@submit="onSubmit")
   form-row
     form-field
       span.mr-2 ¿Tienes alguna duda?
-      styled-link(href="mailto:eugenia.guinea@gmail.com") Ponte en contacto con nosotros
+      styled-link(href="mailto:tesoreria@onghumancoop.org") Ponte en contacto con nosotros
 </template>
 
 <script lang="ts">
